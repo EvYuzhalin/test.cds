@@ -1,0 +1,248 @@
+
+.container{
+	border: 3px solid #007bff;
+}
+
+.nav-link{
+	background-color: #dcdcdc;
+	margin-right: 5px;
+	background-image: url(image/gor1.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 2vw;
+    background-position-x: 6px;
+    height: 4.6vh;
+    padding-top: 1.3vh;
+}
+
+#pills-profile-tab{
+	background-image: url(image/zagor2.png);
+}
+#pills-profile-tab.active{
+	background-image: url(image/zagor1.png);
+}
+
+#pills-contact-tab{
+	background-image: url(image/map1.png);
+}
+#pills-contact-tab.active{
+	background-image: url(image/map2.png);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>#pills-profile-tab{
+	background-image: url(image/zagor1.png);
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+	background-image: url(image/gor2.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 2vw;
+    background-position-x: 6px;
+    height: 4.6vh;
+    padding-top: 1.3vh;
+}
+
+
+
+
+.imgNav{
+	margin: 7px;
+	height: 20px;
+	width: 20px;
+}
+
+.nav{
+	margin-top: 10px;
+}
+
+.tab-content>.active{
+	display: grid;
+	
+}
+
+.displayOneBlock{
+	grid-template-columns: auto;
+}
+.displayTwoBlock{
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: "a b c d"
+						 ". . e e";
+	grid-gap: 1vw;
+}
+.displayThreeBlock{
+	grid-template-columns: auto;
+}
+
+.oneBlockContent{
+	display: grid;
+	border: 1px solid rgb(196, 196, 196);
+}
+.twoBlockContent{
+	display: grid;
+	border: 1px solid rgb(196, 196, 196);
+}
+.threeBlockContent{
+	display: grid;
+	border: 1px solid rgb(196, 196, 196);
+}
+.fourBlockContent{
+	display: grid;
+	border: 1px solid rgb(196, 196, 196);
+}
+
+.titleList{
+	font-size: 2vh;
+}
+
+.container_itemBox{
+	overflow-y: scroll;
+    height: 27vh;
+    margin-right: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    background: #acacac;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #368ce7;
+}
+
+/*checkbox*/
+
+.tests {
+  display: block;
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.tests input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  border: 1px solid #acacac;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.tests input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.tests .checkmark:after {
+	left: 3px;
+	top: 0px;
+	width: 7px;
+	height: 11px;
+	border: solid #368ce7;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.itemBox{
+	display: grid;
+	grid-template-columns: 0.1fr 1fr;
+	align-items: center;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 3vh;
+}
+
+
+.item{
+	display: grid;
+	grid-template-columns: 1.2fr 1fr;
+}
+
+.name{
+	font-size: 1.5vh;
+	margin: 0;
+}
+
+.value{
+	font-size: 14px;
+	color: #0c74e2;
+	margin: 0;
+	justify-self: right;
+}
+
+#demoInput{
+	border: 1px solid rgb(196, 196, 196);
+}
+
+.oneBlock{
+	grid-area: a;
+}
+.twoBlock{
+	grid-area: b;
+}
+.threeBlock{
+	grid-area: c;
+}
+.fourBlock{
+	grid-area: d;
+}
+
+.buttonBlcok{
+	grid-area: e;
+	display: grid;
+	grid-template-columns: 0fr 0fr;
+	place-content: end;
+	grid-gap: 1vw;
+	margin-bottom: 3vh;
+    margin-top: 1vh;
+}
+
+.white{
+	color: #007bff;
+	border: 2px solid #007bff;
+	background: #ffffff;
+	height: 5vh;
+	width: 13vw;
+	font-size: 2vh;
+	padding: 0;
+}
+
+.blue{
+	color: white;
+	background: #007bff;
+	border: none;
+	height: 5vh;
+	width: 13.5vw;
+	font-size: 2vh;
+	padding: 0;
+}

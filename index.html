@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Checkbox</title>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><!-- <img class="imgNav" src="image/temp1.svg"> -->В черте города</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><!-- <img class="imgNav" src="image/zagor2.png"> -->За городом</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"><!-- <img class="imgNav" src="image/map1.png"> -->На карте</a>
+        </li>
+      </ul>
+      
+      <div class="tab-content" id="pills-tabContent">
+      
+      <div class="tab-pane fade show active displayOneBlock" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <p>
+          Музей новейшего западного искусства, основанного на частных коллекциях Ивана Морозова и Сергея Щукина, в 1948 году расформировали, а экспонаты — живопись рубежа XIX–XX веков — поделили пополам между Пушкинским музеем и Эрмитажем. Пушкинский заполучил великолепный набор импрессионистов и постимпрессионистов, которому позавидовал бы любой западный музей: Сезанн (средний и поздний), Гоген (до поездки на Таити и по прибытии на остров), Пикассо («голубого» периода, «розового» и кубистического), Матисс, Дерен, Марке, Вламинк и иже с ними. Сейчас все эти шедевры можно увидеть в отдельном здании.
+        </p>
+      </div>
+      
+      <div class="tab-pane fade displayTwoBlock" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        
+        <div class="oneBlock" id="listBlock">
+          <h2 class="titleList">Тракт</h2>
+          <div class="oneBlockContent" id="demoList">
+            <input class="inputTestone" id="demoInput" type="text" placeholder="Поиск" />
+            <div class="container_itemBox">
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s1">123</span>
+                <div class="item" id="opapa">
+                  <p class="name">Червишевский</p>
+                  <p id="value" class="value">123</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s2">1234</span>
+                <div class="item">
+                  <p class="name">Московский</p>
+                  <p id="value" class="value">1234</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s3">430</span>
+                <div class="item">
+                  <p class="name">Тобольский</p>
+                  <p id="value" class="value">430</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s4">89</span>
+                <div class="item">
+                  <p class="name">Салаирский</p>
+                  <p id="value" class="value">89</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="twoBlock" id="listBlock">
+          <h2 class="titleList">Населённый пункт</h2>
+          <div class="twoBlockContent" id="demoList">
+            <input class="inputTestTwo" id="demoInput" type="text" placeholder="Поиск" />
+            <div class="container_itemBox">
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s5">123</span>
+                <div class="item">
+                  <p class="name">Луговое</p>
+                  <p id="value" class="value">123</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s6">1234</span>
+                <div class="item">
+                  <p class="name">Зеленые холмы</p>
+                  <p id="value" class="value">1234</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s7">89</span>
+                <div class="item">
+                  <p class="name">Кулаково</p>
+                  <p id="value" class="value">89</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s8">7</span>
+                <div class="item">
+                  <p class="name">Червишево</p>
+                  <p id="value" class="value">7</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s9">96</span>
+                <div class="item">
+                  <p class="name">Якуши</p>
+                  <p id="value" class="value">96</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s10">89</span>
+                <div class="item">
+                  <p class="name">Ярд</p>
+                  <p id="value" class="value">89</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="threeBlock" id="listBlock">
+          <h2 class="titleList">СНТ/ДНТ</h2>
+          <div class="threeBlockContent" id="demoList">
+            <input class="inputTestThree" id="demoInput" type="text" placeholder="Поиск" />
+            <div class="container_itemBox">
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s11">123</span>
+                <div class="item">
+                  <p class="name">Элита</p>
+                  <p id="value" class="value">123</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s12">1234</span>
+                <div class="item">
+                  <p class="name">Тура</p>
+                  <p id="value" class="value">1234</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s13">430</span>
+                <div class="item">
+                  <p class="name">Зеленый бор</p>
+                  <p id="value" class="value">430</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s14">12</span>
+                <div class="item">
+                  <p class="name">Автомобилист</p>
+                  <p id="value" class="value">12</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s15">598</span>
+                <div class="item">
+                  <p class="name">Строитель</p>
+                  <p id="value" class="value">598</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="fourBlock" id="listBlock">
+          <h2 class="titleList">Коттеджный поселок</h2>
+          <div class="fourBlockContent" id="demoList">
+            <input class="inputTestFour" id="demoInput" type="text" placeholder="Поиск" />
+            <div class="container_itemBox">
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s16">123</span>
+                <div class="item">
+                  <p class="name">Калинка</p>
+                  <p id="value" class="value">123</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s17">1234</span>
+                <div class="item">
+                  <p class="name">Зубарево хилз</p>
+                  <p id="value" class="value">1234</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s18">430</span>
+                <div class="item">
+                  <p class="name">Сосенка</p>
+                  <p id="value" class="value">430</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s19">89</span>
+                <div class="item">
+                  <p class="name">Три сосны</p>
+                  <p id="value" class="value">89</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s20">9</span>
+                <div class="item">
+                  <p class="name">Есенино</p>
+                  <p id="value" class="value">9</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s21">29</span>
+                <div class="item">
+                  <p class="name">Кочубеево</p>
+                  <p id="value" class="value">29</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s22">87</span>
+                <div class="item">
+                  <p class="name">Олимпия</p>
+                  <p id="value" class="value">87</p>
+                </div>
+              </div>
+              <div class="itemBox">
+                <label class="tests">
+                  <input id="checkbox" type="checkbox"  onclick="recalcSum()">
+                  <span class="checkmark"></span>
+                </label>
+                <span hidden id="s23">0</span>
+                <div class="item">
+                  <p class="name">Вершины</p>
+                  <p id="value" class="value">0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttonBlcok">
+          <input type="button" value="Очистить" onclick="uncheck();" class="white">
+          <input type="button" value="Применить" class="blue">
+      </div>
+<!--         <div class="formInputBlock" hidden>
+          <br />
+          <b>Итоговая сумма:</b> <span id="r" name="sum">0</span> руб.
+        </div> -->
+      </div>
+      <div class="tab-pane fade displayThreeBlock" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <p>
+          Музей новейшего западного искусства, основанного на частных коллекциях Ивана Морозова и Сергея Щукина, в 1948 году расформировали, а экспонаты — живопись рубежа XIX–XX веков — поделили пополам между Пушкинским музеем и Эрмитажем. Пушкинский заполучил великолепный набор импрессионистов и постимпрессионистов, которому позавидовал бы любой западный музей: Сезанн (средний и поздний), Гоген (до поездки на Таити и по прибытии на остров), Пикассо («голубого» периода, «розового» и кубистического), Матисс, Дерен, Марке, Вламинк и иже с ними. Сейчас все эти шедевры можно увидеть в отдельном здании.
+        </p>
+      </div>
+      
+      </div>
+  </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+</html>
